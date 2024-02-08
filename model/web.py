@@ -6,7 +6,7 @@ import json
 from PIL import Image
 import warnings
 warnings.filterwarnings('ignore')
-pickle_in = open("banglore_home_prices_model.pkl","rb")
+pickle_in = open("banglore_home_prices_model.pickle","rb")
 classifier=pickle.load(pickle_in)
 
 with open("columns.json", "r") as f:
