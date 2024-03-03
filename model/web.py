@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-with open("columns.json", "r") as f:
+with open("/columns.json", "r") as f:
     __data_columns = json.load(f)['data_columns']
     __locations = __data_columns[3:]
 with open("banglore_home_prices_model.pkl","rb") as pickle_in:
